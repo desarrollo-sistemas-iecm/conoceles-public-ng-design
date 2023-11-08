@@ -1,0 +1,216 @@
+
+<section data-bs-version="5.1" class="header4 cid-tPcA1XN33D mbr-fullscreen" id="header04-20">
+
+
+
+
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-7">
+          <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong><img
+                src="https://www.iecm.mx/www/images/conoceles.png" alt="Conóceles">
+            </strong></h1>
+          <h2 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5">¡Nos une saber quién es quién en las
+            elecciones!</h2>
+          <p class="mbr-text mbr-fonts-style display-5"><strong>ESTADÍSTICA DE CAPTURA</strong><br></p>
+          <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-secondary display-5"
+              href="estadisticas.html#article03-22">Captura por partido</a> <a
+              class="btn btn-lg btn-secondary display-5" href="estadisticas.html#article03-2k">Captura por alcaldía</a>
+            <a class="btn btn-lg btn-secondary display-5" href="captura-por-distrito.html">Captura por distrito</a> <a
+              class="btn btn-lg btn-secondary display-5" href="page6.html">Captura por diputación migrante</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="article3 cid-tPcA1Z5c2C" id="article03-22">
+
+
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="title col-md-12 col-lg-12">
+
+          <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>CANDIDATURAS CAPTURADAS POR
+              PARTIDO</strong></h3>
+
+        </div>
+        <div class="title col-md-12 col-lg-6">
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="custom-html-2j"><!-- Type valid HTML here -->
+
+    <div>
+      <!-- Incluye la biblioteca Chart.js -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+      <h1>Gráfica de Pastel con 8 Variables</h1>
+      <!-- Elemento HTML donde se mostrará la gráfica -->
+      <div class="grafica-container">
+        <!-- Elemento HTML donde se mostrará la gráfica -->
+        <canvas id="graficaPastel" width="400" height="400"></canvas>
+      </div>
+
+      <script>
+        // Datos para la gráfica (igual que el ejemplo anterior)
+        var datos = {
+          labels: ['Variable 1', 'Variable 2', 'Variable 3', 'Variable 4', 'Variable 5', 'Variable 6', 'Variable 7', 'Variable 8'],
+          datasets: [{
+            data: [10, 20, 15, 30, 5, 25, 12, 18],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(54, 162, 235, 0.7)',
+              'rgba(255, 206, 86, 0.7)',
+              'rgba(75, 192, 192, 0.7)',
+              'rgba(153, 102, 255, 0.7)',
+              'rgba(255, 159, 64, 0.7)',
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(54, 162, 235, 0.7)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)',
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)'
+            ],
+            borderWidth: 1
+          }]
+        };
+
+        // Configuración de la gráfica (igual que el ejemplo anterior)
+        var opciones = {
+          responsive: true
+        };
+
+        // Obtener el elemento canvas y crear la gráfica de pastel (igual que el ejemplo anterior)
+        var ctx = document.getElementById('graficaPastel').getContext('2d');
+        var grafica = new Chart(ctx, {
+          type: 'pie',
+          data: datos,
+          options: opciones
+        });
+      </script>
+
+
+    </div>
+  </div>
+
+  <section data-bs-version="5.1" class="article3 cid-tPcHDUcBUk" id="article03-2k">
+
+
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="title col-md-12 col-lg-12">
+
+          <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>CANDIDATURAS CAPTURADAS POR
+              ALCALDÍA</strong></h3>
+
+        </div>
+        <div class="title col-md-12 col-lg-6">
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="custom-html-2l"><!-- Type valid HTML here -->
+
+    <div>
+      <!-- Incluye la biblioteca Chart.js -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <h1>Gráfica de Barras con 16 Variables</h1>
+      <!-- Contenedor de la gráfica -->
+      <div class="grafica-container">
+        <!-- Elemento HTML donde se mostrará la gráfica -->
+        <canvas id="graficaBarras" width="400" height="400"></canvas>
+      </div>
+
+      <script>
+        // Datos para la gráfica de barras con 16 variables
+        var datos = {
+          labels: [
+            'Variable 1', 'Variable 2', 'Variable 3', 'Variable 4', 'Variable 5', 'Variable 6', 'Variable 7', 'Variable 8',
+            'Variable 9', 'Variable 10', 'Variable 11', 'Variable 12', 'Variable 13', 'Variable 14', 'Variable 15', 'Variable 16'
+          ],
+          datasets: [{
+            data: [10, 20, 15, 30, 5, 25, 12, 18, 22, 7, 14, 28, 10, 15, 20, 12], // Valores de las 16 variables
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(54, 162, 235, 0.7)',
+              'rgba(255, 206, 86, 0.7)',
+              'rgba(75, 192, 192, 0.7)',
+              'rgba(153, 102, 255, 0.7)',
+              'rgba(255, 159, 64, 0.7)',
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(54, 162, 235, 0.7)',
+              'rgba(255, 206, 86, 0.7)',
+              'rgba(75, 192, 192, 0.7)',
+              'rgba(153, 102, 255, 0.7)',
+              'rgba(255, 159, 64, 0.7)',
+              'rgba(255, 99, 132, 0.7)',
+              'rgba(54, 162, 235, 0.7)',
+              'rgba(255, 206, 86, 0.7)',
+              'rgba(75, 192, 192, 0.7)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)',
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)',
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)'
+            ],
+            borderWidth: 1
+          }]
+        };
+
+        // Configuración de la gráfica de barras
+        var opciones = {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        };
+
+        // Obtener el elemento canvas y crear la gráfica de barras
+        var ctx = document.getElementById('graficaBarras').getContext('2d');
+        var grafica = new Chart(ctx, {
+          type: 'bar',
+          data: datos,
+          options: opciones
+        });
+      </script>
+
+
+    </div>
+  </div>
